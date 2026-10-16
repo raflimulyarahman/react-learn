@@ -23,9 +23,18 @@
             return(<h1>Belajar react bareng {name? name : 'Rafli'}</h1>)
         }
 
+        function Button({likes, handleClick}) {
+            return(<button onClick={handleClick}>Like {likes}</button>)
+        }
+
         function HomePage() {
 
             const students = ["Budi", "Ani", "Caca", "Rina"];
+            const [likes, setLikes] = React.useState(0);
+
+            function handleClick() {
+                setLikes(likes + 1);
+            }
 
             
             return (
@@ -38,6 +47,7 @@
                             )
                         })}
                 </ul>
+                <Button likes={likes} handleClick={handleClick} />
                 </>
             )
         }
