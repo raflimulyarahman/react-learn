@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Header from "./components/Header";
-import Form from "./components/Form";
-import GroceryList from "./components/GroceryList";
-import Footer from "./components/Footer";
+import Header from "./Header";
+import Form from "./Form";
+import GroceryList from "./GroceryList";
+import Footer from "./Footer";
 
 const groceryItems = [
   {
@@ -40,7 +40,7 @@ export default function App() {
   }
 
   function handleToggleItem(id: number) {
-    setItems(items.map((item) => (item.id === id ? {...item, checked: !item.checked} : item)))
+    setItems(items.map((item) => (item.id === id ? { ...item, checked: !item.checked } : item)))
   }
 
   function handleClearItems() {

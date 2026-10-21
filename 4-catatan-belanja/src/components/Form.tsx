@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import type { GroceryItem } from "../App";
+import type { GroceryItem } from "./App";
 
 export default function Form({ onAddItem }: { onAddItem: (item: GroceryItem) => void }) {
   const [name, setName] = useState('');
