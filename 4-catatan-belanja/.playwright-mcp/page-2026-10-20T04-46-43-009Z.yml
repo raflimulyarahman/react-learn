@@ -1,0 +1,33 @@
+- generic [ref=f1e3]:
+  - heading "Catatan Belanjaku 📝" [level=1] [ref=f1e4]
+  - generic [ref=f1e5]:
+    - heading "Hari ini belanja apa kita?" [level=3] [ref=f1e6]
+    - generic [ref=f1e7]:
+      - combobox [ref=f1e8] [cursor=pointer]:
+        - option "1" [selected]
+        - option "2"
+        - option "3"
+        - option "4"
+        - option "5"
+      - textbox "nama barang..." [ref=f1e9]
+    - button "Tambah" [ref=f1e10] [cursor=pointer]
+  - list [ref=f1e12]:
+    - listitem [ref=f1e13]:
+      - checkbox [checked] [ref=f1e14] [cursor=pointer]
+      - generic [ref=f1e15]: 1 Kopi
+      - button "×" [ref=f1e16] [cursor=pointer]
+    - listitem [ref=f1e17]:
+      - checkbox [ref=f1e18] [cursor=pointer]
+      - generic [ref=f1e19]: 5 Gula Pasir
+      - button "×" [ref=f1e20] [cursor=pointer]
+    - listitem [ref=f1e21]:
+      - checkbox [ref=f1e22] [cursor=pointer]
+      - generic [ref=f1e23]: 3 Air Mineral
+      - button "×" [ref=f1e24] [cursor=pointer]
+  - generic [ref=f1e25]:
+    - combobox [ref=f1e26] [cursor=pointer]:
+      - option "Urutkan berdasarkan urutan input" [selected]
+      - option "Urutkan berdasarkan nama barang"
+      - option "Urutkan berdasarkan ceklis"
+    - button "Bersihkan Daftar" [ref=f1e27] [cursor=pointer]
+  - contentinfo [ref=f1e28]: Ada 10 barang di daftar belanjaan, 5 barang sudah dibeli (50%)
